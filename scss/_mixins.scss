@@ -1,6 +1,45 @@
-@mixin list-unstyled {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-  list-style-type: none;
+/*MIXINS*/
+
+@mixin description {
+  color: $colorPrimary;
+  padding-left: 40px;
+  border-left: 3px solid #000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%; 
+  
+}
+
+@mixin main-button_btn{
+  width: 260px;
+  height: 51px;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $btnColor;
+  border: none;
+  color: $btnDisabled;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%; 
+  text-transform: uppercase;
+}
+
+@mixin  main-card-title{
+  color: $colorSecondary;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%; 
+  text-transform: uppercase;
+  
+}
+
+@mixin main-title{
+  
+  color:$colorSecondary;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 120%;
 }
